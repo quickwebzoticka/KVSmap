@@ -411,6 +411,7 @@ $(function() {
     initMap();
     $(document).on("click",".legend-item",function(e){
         e.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
         var text = $(this).attr("data-filter-map");
         if(text) filterMarkers(text);
         else moveToLocation();
