@@ -581,11 +581,12 @@ $(function() {
             scrollwheel: false,
             disableDefaultUI: true,
             styles: [
-            {stylers: [
-                  { hue: "#00ffe6" },
-                  { saturation: -20 }
-            ]},
-            {elementType: 'geometry', stylers: [{color: '#444444'}]},
+            // {stylers: [{
+            //       hue: "#333333",
+            //       saturation: -100,
+            //       lightness: 24
+            // }]},
+            {elementType: 'geometry', stylers: [{hue: "#000000"}, {saturation: -100}, {lightness: -65}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
             {
@@ -668,27 +669,6 @@ $(function() {
               elementType: 'labels.text.stroke',
               stylers: [{color: '#17263c'}]
             },
-            {
-                featureType: 'landscape.man_made',
-                elementType: 'geometry.fill',
-                stylers: [{
-                  color: '#444444'
-                }]
-            },
-            {
-                featureType: 'landscape.man_made',
-                elementType: 'labels.text.fill',
-                stylers: [{
-                  color: '#FFFFFF'
-                }]
-            },
-            {
-                featureType: 'landscape.man_made',
-                elementType: 'geometry.stroke',
-                stylers: [{
-                  color: '#FFFFFF'
-                }]
-            }
           ]
         });
 
