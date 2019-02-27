@@ -496,6 +496,14 @@ $(function() {
                   title: 'KVS - отдел продаж',
                   typea: 'kvs',
             },
+
+
+            {
+                  position: { lat: 60.060541, lng: 30.338436},
+                  type: 'ski',
+                  title: 'Гранд Каньон Айс каток с кафе и ночным катанием',
+                  typea: 'ski',
+            },
     ]
 
     var gmarkers1 = [];
@@ -584,7 +592,7 @@ $(function() {
         
         map = new google.maps.Map(document.querySelector('#map'), {
             center: new google.maps.LatLng(60.068521, 30.313409),
-            zoom: 13,
+            zoom: 14,
             streetViewControl: false,
             mapTypeControl: false,
             gestureHandling: 'greedy',
@@ -725,7 +733,7 @@ $(function() {
 
     filterMarkers = function (category) {
     	map.panTo(new google.maps.LatLng(60.068521, 30.313409));
-    	map.setZoom(13);
+    	map.setZoom(14);
         gmarkers1.map((marker) => {
         	if (marker.category == category || category.length === 0 || marker.category == "logo") {
                 marker.setVisible(true);
