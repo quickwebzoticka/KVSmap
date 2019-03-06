@@ -747,11 +747,20 @@ $(function() {
                 ]
               },
               {
-                "featureType": "road",
+                "featureType": "road.highway",
                 "elementType": "geometry.fill",
                 "stylers": [
                   {
-                    "color": "#ffb87c"
+                    "color": "#ffcda3"
+                  }
+                ]
+              },
+              {
+                "featureType": "road.arterial",
+                "elementType": "geometry.fill",
+                "stylers": [
+                  {
+                    "color": "#ffcda3"
                   }
                 ]
               },
