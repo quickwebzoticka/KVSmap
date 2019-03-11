@@ -914,8 +914,58 @@ $(function() {
     }
 
     filterMarkers = function (category) {
-      map.panTo(new google.maps.LatLng(60.068521, 30.313409));
-      map.setZoom(14);
+      if (category === "gym") {
+          map.panTo(new google.maps.LatLng(60.070478, 30.329453));
+          map.setZoom(15);
+        }
+      if (category === "bycicle") {
+          map.panTo(new google.maps.LatLng(60.068521, 30.313409));
+          map.setZoom(15);
+        }
+      if (category === "workout") {
+          map.panTo(new google.maps.LatLng(60.073247, 30.332777));
+          map.setZoom(15);
+        }
+      if (category === "mount") {
+          map.panTo(new google.maps.LatLng(60.063399, 30.325092));
+          map.setZoom(15);
+        }
+      if (category === "fun") {
+          map.panTo(new google.maps.LatLng(60.073331, 30.337390));
+          map.setZoom(15);
+        }
+      if (category === "horse") {
+          map.panTo(new google.maps.LatLng(60.075026, 30.286753));
+          map.setZoom(15);
+        }
+      if (category === "spa") {
+          map.panTo(new google.maps.LatLng(60.073247, 30.332777));
+          map.setZoom(15);
+        }
+      if (category === "healthfood") {
+          map.panTo(new google.maps.LatLng(60.073247, 30.332777));
+          map.setZoom(15);
+        }
+      if (category === "park") {
+          map.panTo(new google.maps.LatLng(60.072961, 30.301001));
+          map.setZoom(15);
+        }
+      if (category === "ski") {
+          map.panTo(new google.maps.LatLng(60.067663, 30.347784));
+          map.setZoom(15);
+        }
+      if (category === "beach") {
+          map.panTo(new google.maps.LatLng(60.081428, 30.284967));
+          map.setZoom(15);
+        }
+      if (category === "snowboard") {
+          map.panTo(new google.maps.LatLng(60.069462, 30.342778));
+          map.setZoom(15);
+        }
+
+      if (category === "") {
+            map.setZoom(14);
+      }
         gmarkers1.map((marker) => {
             if (marker.category == category || category.length === 0 || marker.category == "logo") {
                 marker.setVisible(true);
@@ -927,6 +977,7 @@ $(function() {
     }
     function moveToLocation(){
         map.panTo(new google.maps.LatLng(60.068521, 30.313409));
+        map.setZoom(14);
         gmarkers1.map((marker) => {
             marker.setVisible(true);
         });
