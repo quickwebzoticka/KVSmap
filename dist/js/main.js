@@ -238,12 +238,6 @@ $(function() {
                 title: 'Жилой комплекс Континенты',
                 typea: 'logo',
             },
-            {
-                position: { lat: 60.071804, lng: 30.311962 },
-                type: 'logo1',
-                title: 'Жилой комплекс Жили были',
-                typea: 'logo1',
-            },
 
             {
                 position: { lat: 60.072961, lng: 30.301001},
